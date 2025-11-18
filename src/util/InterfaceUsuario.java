@@ -20,11 +20,11 @@ public class InterfaceUsuario {
         }
     }
 
-    public int inputPrazoFinanciamento() {
+    public double inputPrazoFinanciamento() {
         System.out.print("Digite o prazo do financiamento em anos: ");
-        int num = input.nextInt();
+        double num = input.nextInt();
         if (num > 0 && num < 60) {
-            return num;
+            return num / 100;
         }
         else {
             System.out.println("Prazo inválido, tente novamente.");
